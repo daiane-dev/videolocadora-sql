@@ -35,7 +35,7 @@ Para facilitar consultas e análises, foram criadas views que consolidam e resum
 
 ### Views criadas
 - **vw_locacoes_detalhadas**  
-  View principal que consolida locações com informações de usuário e filme (JOIN completo).
+  Consolida locações com informações de usuário e filme (JOIN completo).
 
 - **vw_faturamento_mensal**  
   Exibe o total de locações e o faturamento agrupado por mês.
@@ -49,5 +49,9 @@ Para facilitar consultas e análises, foram criadas views que consolidam e resum
 
 ```sql
 SELECT * FROM vw_locacoes_detalhadas;
-SELECT * FROM vw_faturamento_mensal ORDER BY mes;
-SELECT * FROM vw_filmes_ranking ORDER BY total_locacoes DESC;
+
+SELECT * FROM vw_faturamento_mensal
+ORDER BY mes;
+
+SELECT * FROM vw_filmes_ranking
+ORDER BY total_locacoes DESC;
