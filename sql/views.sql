@@ -3,6 +3,8 @@
 -- Camada analítica
 -- ==========================================
 
+USE videolocadora;
+
 -- View: locações detalhadas
 CREATE OR REPLACE VIEW vw_locacoes_detalhadas AS
 SELECT
